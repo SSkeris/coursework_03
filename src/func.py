@@ -69,5 +69,6 @@ def get_to(i: dict) -> str:
 
 
 def date_(i: dict) -> str:
+    """Приведение даты в нужный формат"""
     date = datetime.strptime(i["date"], "%Y-%m-%dT%H:%M:%S.%f").strftime("%d.%m.%Y")
     return date
